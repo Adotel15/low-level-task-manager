@@ -143,7 +143,7 @@
     <ClCompile Include="src\todo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header\todo.h" />
+    <ClInclude Include="header\Todo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

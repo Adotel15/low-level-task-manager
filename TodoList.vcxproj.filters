@@ -10,6 +10,6 @@
     <ClCompile Include="src\todo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header\todo.h" />
+    <ClInclude Include="header\Todo.h" />
   </ItemGroup>
 </Project>
