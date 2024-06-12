@@ -1,15 +1,11 @@
-
 #include "../header/Todo.h"
 #include <iostream>
 
 using namespace std;
 
-void print_menu() {
-
-}
+void print_menu() {}
 
 int main() {
-	
 	int opt;
 	string name_list;
 
@@ -17,12 +13,9 @@ int main() {
 	cin >> name_list;
 
 	TodoList list_app(name_list);
-
 	do {
-
 		cout << "Introduce una opcion: ";
 		cin >> opt;
-
 		if (opt == 1) {
 			cout << list_app.get_Name() << endl;
 		}
@@ -33,7 +26,6 @@ int main() {
 		else if (opt == 3) {
 			list_app.list_Tasks();
 		}
-
 	} while (opt != 0);
 
 	return 0;

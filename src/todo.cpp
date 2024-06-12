@@ -1,8 +1,5 @@
-
-#include "../header/Todo.h"
 #include <iostream>
-
-// Helper
+#include "../header/Todo.h"
 
 void print_task(Task& _task) {
 	std::cout << "Tarea " << _task.id << std::endl;
@@ -10,8 +7,6 @@ void print_task(Task& _task) {
 	std::cout << _task.get_Priority() << std::endl;
 	std::cout << _task.is_Finished() << std::endl;
 }
-
-// TodoList declaration
 
 TodoList::TodoList(std::string _name) { this->name = _name; };
 
@@ -25,7 +20,6 @@ void TodoList::add_Task(Task& _task){
 }
 
 void TodoList::remove_Task(int _id) {
-
 	int position_task;
 
 	for (int i = 0; i < this->list_length; ++i){
@@ -43,13 +37,10 @@ void TodoList::remove_Task(int _id) {
 }
 
 void TodoList::list_Tasks() {
-
 	for (int i = 0; i < this->list_length; ++i) {
 		print_task(this->list[i]);
 	}
 }
-
-// Task
 
 std::string Task::get_Name() { return this->task_name; }
 
